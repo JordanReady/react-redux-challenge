@@ -34,7 +34,17 @@ const PostList = () => {
   return (
     <div>
       <h1>List of Posts</h1>
-      <button onClick={refetchData}>Refresh</button>
+      <button
+        style={{
+          color: "white",
+          backgroundColor: "black",
+          padding: "5px",
+          borderRadius: "5px",
+        }}
+        onClick={refetchData}
+      >
+        Refetch
+      </button>
       <ul style={{ listStyle: "none" }}>
         {posts.map((post) => (
           <li key={post.id}>
